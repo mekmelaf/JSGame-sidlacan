@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Rock Paper Scissor</title>
+</head>
+<body>
+  <script defer src="script/main.js"></script>
+
+    <section class="container">
+      <div class="subContainer">
+        <h1>Let's Play!</h1>
+        <div class="scoreTable">
+          <div id="myScore">
+            <p>You're Score</p>
+            <p id="score1">0</p>
+          </div>
+        <div id="computerScore">
+            <p>Computer Score</p>
+            <p id="score2">0</p>
+        </div>
+        </div>
+          <div class="gameResult">
+            <div class="player1">
+              <span>Player:  </span>
+              <div id="p1_choice"></div>
+            </div>
+            <div class="player2">
+              <span>Computer: </span>
+              <div id="p2_choice"></div>
+            </div>
+            <p id="win_lose"></p>
+          </div>
+      </div>  
+      <div class="option_image">
+        <span class="option_image">
+          <button onclick="laroTayo('Rock')"><img class="btnImg" src="images/bato.png" alt=""></button>
+        </span>
+        <span class="option_image">
+          <button onclick="laroTayo('Paper')"><img class="btnImg" src="images/papel.png" alt=""></button>
+        </span>
+        <span class="option_image">
+          <button onclick="laroTayo('Scissor')"><img class="btnImg" src="images/gunting.png" alt=""></button>
+        </span>
+      </div>
+      <p class="matchHistory">Match history</p>
+      <div class="lowerBtn">  
+        <section id="history" class="history"></section>
+        <button onclick="ReloadPage()" type="reset" class="reset">Reset</button>
+      </div>  
+    </section>
+    
+</body>
+</html>

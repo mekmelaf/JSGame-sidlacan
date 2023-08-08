@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Righteous&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+
+}
+.subContainer {
+    width: 500px;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 10px;
+    display: grid;
+    align-items: start;
+    height: 230px;
+    background: linear-gradient(to bottom right , aqua,orange);
+}
+.container {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    
+}
+.btnImg {
+    background-color: white;
+    padding-top: 5px;
+    border-radius: 10px;
+    width: 130px;
+    display: flex;    
+}
+.scoreTable {
+    height: 80px;
+}
+.gameResult {
+    column-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 40px;
+}
+.gameResult .player1 , .player2 {
+    width: 45%;
+    display: flex;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.gameResult .player1 span  , .player2 span {
+    display: inline-block;
+}
+.gameResult #win_lose {
+    width: 100%;
+    text-align: center;
+}
+.history {
+    /* border: 5px solid black; */
+    justify-content: center;
+    display: grid;
+    width: 300px;
+    height: 65px;
+    overflow: auto;
+  }
+.option_image {
+    display: flex;
+    justify-content: space-evenly;
+}
+.player2 , .p2choice {
+    column-gap: 10px;
+}
+.player1 , .p1choice {
+    column-gap: 10px;
+}
+.lowerBtn {
+    display: flex;
+    flex-wrap: wrap ;
+}
+.reset {
+    width: 190px;
+    border: 2px solid black;
+    border-radius: 20px;
+    border-style: outset;
+}
+.matchHistory {
+    padding-left: 20%;
+    padding-top: 2%;
+    text-decoration: underline;
+
+}
